@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    margin-top: -100px;
+    img {
+      display: block;
+      padding-top: 100px;
+      height: 306px;
+    }
+    p {
+      margin-top: -70px;
+      margin-left: 75px;
+      color: #1c1e21;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 38px;
+      width: 491px;
+    }
+  }
+  .right {
+    margin-top: 143px;
+    margin-right: 50px;
+    .form {
+      background-color: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .inp-username,
+      .inp-password {
+        font-size: 17px;
+        padding: 14px 16px;
+        width: 400px;
+        margin-top: 12px;
+        height: 30px;
+        border-radius: 6px;
+        background: #ffffff;
+        border: 1px solid #dddfe2;
+        color: #1d2129;
+        font-family: Helvetica, Arial, sans-serif;
+        line-height: 16px;
+        outline: none;
+        margin-left: 40px;
+      }
+      .btn-login {
+        background-color: #0866ff;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 48px;
+        height: 60px;
+        width: 435px;
+        margin-top: 15px;
+        color: white;
+        margin-left: 40px;
+      }
+    }
+    .a {
+      display: block;
+      color: #0866ff;
+      font-size: 23px;
+      padding-top: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid gray;
+      padding-left: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 40px;
+      margin-right: 41px;
+    }
+    .btn2 {
+      border: none;
+      border-radius: 6px;
+      font-size: 17px;
+      line-height: 48px;
+      color: white;
+      padding: 0 16px;
+      width: 300px;
+      height: 60px;
+      background-color: #42b72a;
+      margin: 60px auto 0 auto;
+      border-color: #42b72a;
+    }
+    p {
+      padding-top: 30px;
+      a {
+        color: #1c1e21;
+        text-decoration: none;
+      }
+      font-size: 20px;
+      width: 520px;
+      text-align: center;
+      color: #666;
+    }
+  }
+}
+
+input {
+  display: block;
+}
+button {
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 1220px) {
+  .home {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
+}
