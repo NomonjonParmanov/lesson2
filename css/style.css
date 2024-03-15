@@ -289,6 +289,11 @@ a {
 .card img {
   height: 400px;
 }
+.card button {
+  background-color: red;
+  color: white;
+  border: none;
+}
 
 @media (max-width: 990px) {
   .first {
